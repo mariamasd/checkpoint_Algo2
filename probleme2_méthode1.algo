@@ -1,0 +1,34 @@
+ALGORITHM somme_chauvauchement
+VAR
+     tab1 : ARRAY_OF INTEGER[N];
+    tab2 : ARRAY_OF INTEGER[M];
+    i,j,element,valeur,sum:INTEGER;
+BEGIN
+     sum=0
+     write("donner la taille du tableau 1")
+     read(N)
+      write("donner la taille du tableau 2")
+     read(M)
+    write("Donner les elements du tableau 1 ET 2")
+    for i from 0 to N-1 steeps 1 on
+    for j from 0 to M-1 steeps 1 on
+
+        read(tab1[i])
+        read(tab1[j])
+            if(tab1[i]== tab2[j])
+                tab1[i]=element
+                valeur=element*2;
+                sum+=valeur
+                valeur=valeur+1;
+            END_if
+            if( tab2[j]<>tab1[i])
+                tab2[j]=element
+                valeur=element*2;
+                sum+=valeur;
+                 valeur=valeur+1;
+
+            END_if
+        
+    END_for
+    END_for
+END

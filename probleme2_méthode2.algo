@@ -1,0 +1,39 @@
+ALGORITHM somme-htab
+VAR
+    htab1<INTEGER,INTEGER>
+    htab2<INTEGER,INTEGER>
+    i,j,m,n,valeur,element,sum :INTEGER
+
+BEGIN
+    sum=0;
+    write("donner la taille du htab 1")
+    read(n)
+    FOR i FROM 0 TO n STEP 1  DO
+        write("donner l element du htab1 à la position" i)
+        read(value)
+        htab1.insert(i,value)
+        write("donner la taille du hastab2")
+        read(m)
+        FOR j FROM 0 TO m STEP 1  DO
+        write ("donner l element du hastab2 a la position"j)
+        read(value)
+        htab2.insert(j,value)
+        if(htab2.search(htab1.get(i))== htab2.get(i))
+            htab2.search(htab1.get(i))=element
+            valeur=(element*2)
+            sum+=valeur;
+            valeur=valeur+1
+        END_if;
+
+        if(htab1.search(htab2.get(i))== htab1.get(i))
+            htab1.search(htab2.get(i))=element
+            valeur=(element*2)
+            sum+=valeur;
+            valeur=valeur+1
+        END_if;
+    END_for
+
+
+
+
+END
